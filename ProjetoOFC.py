@@ -1,9 +1,21 @@
+print()
+print("***********NL1A - Ondas Eletromagnéticas***********")
+print()
+
+print("Esse programa tem como objetivo calcular os valores de Em, Bm, I, f, lambda, k e omega, a partir de um valor conhecido.")
+print()
+print("Ondas eletromagnéticas são ondas que se propagam no vácuo, e que são formadas por oscilações de campos elétricos e magnéticos.\nUm exemplo de onda eletromagnética é a luz.")
+print()
+print("Em = campo elétrico médio\nBm = campo magnético médio\nI = intensidade da onda\nf = frequência\nlambda = comprimento de onda\nk = número de onda\nomega = frequência angular")
+print()
+print("Integantes da NL1A:\n- Livia Miyabara\n- Luiggi\n- Marcio Forner\n- Paulo Brito")
+print()
+print("Declaração de constantes: \npi = 3.1416\nC = 300000000\nmicro0 = 4 * pi * 10^-7")
 pi = 3.1416
 C = 300000000
 micro0 = 4 * pi * 10**-7
-print(f"Velocidade da Luz: {C:.2e} m/s")
-
-Opcao = int(input("Escolha uma opção: 1 - Em, 2 - Bm, 3 - I, 4 - f, 5 - lambdaa, 6 - k, 7 - omega: "))
+print()
+Opcao = int(input("Escolha uma opção:\n1 - Em\n2 - Bm\n3 - I\n4 - f\n5 - Lambda\n6 - k\n7 - Omega\n"))
 
 if Opcao == 1:
     Em = float(input("Digite o valor de Em: "))
