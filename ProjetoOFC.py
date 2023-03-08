@@ -1,6 +1,8 @@
 import time
+import os
 print("=============NL1A - Ondas Eletromagnéticas=============")
 time.sleep(3)
+os.system('cls')
 print()
 print("==================Sumário e Objetivos==================")
 print()
@@ -22,11 +24,13 @@ print("incluindo a comunicação sem fio, a produção de imagens médicas, a in
 print("de energia elétrica.")
 print()
 time.sleep(3)
+os.system('cls')
 print("==================Integrantes do Grupo=================")
 print()
 print("- Livia Miyabara\n- Luiggi\n- Marcio Forner\n- Paulo Brito")
 print()
 time.sleep(3)
+os.system('cls')
 pi = 3.1416
 C = 300000000
 micro0 = 4 * pi * 10**-7
@@ -35,6 +39,7 @@ print()
 print(f"pi = {pi}\nVelocidade da Luz(C) = {C:.2e}\nConstanteMagnética(micro0) = {micro0:.2e}")
 print()
 time.sleep(3)
+os.system('cls')
 print("OBS: O programa só aceita números com ponto, não com vírgula, além disso escreva todos os valores em relação a unidade Ex. 60uT = 60*10^-6T")
 resposta = 1
 while resposta == 1:
@@ -112,5 +117,6 @@ while resposta == 1:
         print("Opção inválida!")
     print()
     resposta = int(input("Deseja fazer um outro estudo? 1 - Sim 2 - Não: "))
+    os.system('cls')
     print()
 print("Obrigado por usar nosso programa! :D")
