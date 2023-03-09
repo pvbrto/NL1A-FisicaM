@@ -1,5 +1,6 @@
 import time
 import os
+os.system('cls')
 print("=============NL1A - Ondas Eletromagnéticas=============")
 time.sleep(3)
 os.system('cls')
@@ -23,7 +24,7 @@ print("como transformadores e motores elétricos. As ondas magnéticas têm vár
 print("incluindo a comunicação sem fio, a produção de imagens médicas, a inspeção de materiais e a geração ")
 print("de energia elétrica.")
 print()
-time.sleep(3)
+time.sleep(10)
 os.system('cls')
 print("==================Integrantes do Grupo=================")
 print()
@@ -38,12 +39,13 @@ print("======================CONSTANTES=======================")
 print()
 print(f"pi = {pi}\nVelocidade da Luz(C) = {C:.2e}\nConstanteMagnética(micro0) = {micro0:.2e}")
 print()
-time.sleep(3)
+time.sleep(5)
 os.system('cls')
 print("OBS: O programa só aceita números com ponto, não com vírgula, além disso escreva todos os valores em relação a unidade Ex. 60uT = 60*10^-6T")
 resposta = 1
+time.sleep(3)
 while resposta == 1:
-    time.sleep(3)
+    
     print("=======================================================")
     print("==================Legenda de Unidades==================")
     print("=======================================================")
