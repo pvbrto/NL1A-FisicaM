@@ -51,7 +51,7 @@ while resposta == 1:
     print("==================Legenda de Unidades==================")
     print("=======================================================")
     print()
-    print("Em = campo elétrico médio\nBm = campo magnético médio\nI = intensidade da onda\nf = frequência\nlambda = comprimento de onda\nk = número de onda\nomega = frequência angular")
+    print("Em = campo elétrico médio - V/m\nBm = campo magnético médio - T\nI = intensidade da onda - W/m²\nf = frequência - Hz\nlambda = comprimento de onda - m\nk = número de onda - rad/m\nomega = frequência angular - rad/s")
     print()
     print()
     print("===============MENU DE OPÇÕES DE CALCULO===============")
@@ -115,7 +115,7 @@ while resposta == 1:
         lambdaa = C/f
         print(f"O valor de lambda é: {lambdaa:.2e} m")
         k = 2 * pi/lambdaa
-        print(f"O valor de k é: {k:.2e} m^-1")
+        print(f"O valor de k é: {k:.2e} rad/m")
     else:
         print("Opção inválida!")
     print()
