@@ -7,7 +7,8 @@ os.system('cls')
 print()
 print("==================Sumário e Objetivos==================")
 print()
-print("Esse programa tem como objetivo calcular os valores de Em, Bm, I, f, lambda, k e omega, a partir de um valor conhecido.")
+print("Esse programa tem como objetivo de auxiliar na matéria de ondas eletromagnéticas calculando os valores de Em, Bm, I, f, lambda, k e omega, a partir de um valor conhecido.")
+print("Uma das limitações desse código é que o mesmo não pode fazer os cálculos de ondas eletromagnéticas que envolvem vetores,")
 print()
 print("Em relação a parte teórica as ondas eletromagnéticas são um tipo de radiação ")
 print("que se propaga no espaço sem a necessidade de um meio físico. Elas são compostas por campos elétricos") 
@@ -37,7 +38,7 @@ C = 300000000
 micro0 = 4 * pi * 10**-7
 print("======================CONSTANTES=======================")
 print()
-print(f"pi = {pi}\nVelocidade da Luz(C) = {C:.2e}\nConstanteMagnética(micro0) = {micro0:.2e}")
+print(f"pi = {pi}\nVelocidade da Luz(C) = {C:.2e}\nConstanteMagnética(micro0) = {micro0:.3e}")
 print()
 time.sleep(5)
 os.system('cls')
@@ -54,33 +55,33 @@ while resposta == 1:
     print()
     print()
     print("===============MENU DE OPÇÕES DE CALCULO===============")
-    Opcao = int(input("Escolha uma opção:\n1 - Em\n2 - Bm\n3 - I\n4 - f\n5 - Lambda\n6 - k\n7 - Omega\n=======================================================\nEscolha a opção:"))
+    Opcao = int(input("Escolha uma opção para escrever o valor:\n1 - Em\n2 - Bm\n3 - I\n4 - f\n5 - Lambda\n6 - k\n7 - Omega\n=======================================================\nEscolha a opção:"))
     time.sleep(1)
     print()
     
     if Opcao == 1:
-        Em = float(input("Digite o valor de Em: "))
+        Em = float(input("Digite o valor de Em em V/m: "))
         print()
         Bm = (Em)/C
         print(f"O valor de Bm é: {Bm:.2e} T")
         I = (1/(2* micro0 * C)) * (Em ** 2)
         print(f"O valor de I é: {I:.2e} W/m²")
     elif Opcao == 2:
-        Bm = float(input("Digite o valor de Bm: "))
+        Bm = float(input("Digite o valor de Bm em T: "))
         print()
         Em = Bm * C
         print(f"O valor de Em é: {Em:.2e} V/m")
         I = (C/(2* micro0)) * (Bm ** 2)
         print(f"O valor de I é: {I:.2e} W/m²")
     elif Opcao == 3:
-        I = float(input("Digite o valor de I: "))
+        I = float(input("Digite o valor de I em W/m²: "))
         print()
         Em = (2 * micro0 * C * I)**(1/2)
         print(f"O valor de Em é: {Em:.2e} V/m")
         Bm = ((2 * micro0 * I)/C)**(1/2)
         print(f"O valor de Bm é: {Bm:.2e} T")
     elif Opcao == 4:
-        f = float(input("Digite o valor de f: "))
+        f = float(input("Digite o valor de f em Hz: "))
         print()
         lambdaa = C/f
         print(f"O valor de lambda é: {lambdaa:.2e} m")
@@ -89,7 +90,7 @@ while resposta == 1:
         omega = 2 * pi * f
         print(f"O valor de omega é: {omega:.2e} rad/s")
     elif Opcao == 5:
-        lambdaa = float(input("Digite o valor de lambda: "))
+        lambdaa = float(input("Digite o valor de lambda em m: "))
         print()
         f = C/lambdaa
         print(f"O valor de f é: {f:.2e} Hz")
@@ -98,7 +99,7 @@ while resposta == 1:
         omega = 2 * pi * f
         print(f"O valor de omega é: {omega:.2e} rad/s")
     elif Opcao == 6:
-        k = float(input("Digite o valor de k: "))
+        k = float(input("Digite o valor de k em rad/m: "))
         print()
         lambdaa = 2 * pi/k
         print(f"O valor de lambda é: {lambdaa:.2e} m")
@@ -107,7 +108,7 @@ while resposta == 1:
         omega = 2 * pi * f
         print(f"O valor de omega é: {omega:.2e} rad/s")
     elif Opcao == 7:
-        omega = float(input("Digite o valor de omega: "))
+        omega = float(input("Digite o valor de omega em rad/s: "))
         print()
         f = omega/(2 * pi)
         print(f"O valor de f é: {f:.2e} Hz")
