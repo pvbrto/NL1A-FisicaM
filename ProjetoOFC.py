@@ -25,7 +25,7 @@ print("como transformadores e motores elétricos. As ondas magnéticas têm vár
 print("incluindo a comunicação sem fio, a produção de imagens médicas, a inspeção de materiais e a geração ")
 print("de energia elétrica.")
 print()
-time.sleep(10)
+time.sleep(12)
 os.system('cls')
 print("==================Integrantes do Grupo=================")
 print()
